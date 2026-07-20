@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+/* UPSDE editorial design system. The existing green, terracotta and gold
+   palette is preserved, with warmer paper-like surfaces and flatter sections. */
+
+@theme {
+  /* Brand */
+  --color-primary: #174c3c;
+  --color-primary-dark: #10362b;
+  --color-primary-soft: #e7efe9;
+  --color-terracotta: #c46f44;
+  --color-terracotta-soft: #f6ebe4;
+  --color-gold: #c79a45;
+  --color-gold-soft: #f7f0e0;
+
+  /* Surfaces */
+  --color-background: #fbf8f1;
+  --color-surface: #eef2ed;
+  --color-card: #ffffff;
+  --color-paper: #f5efe3;
+
+  /* Text */
+  --color-ink: #1c2521;
+  --color-ink-secondary: #5f6b65;
+  --color-ink-muted: #7b857f;
+
+  /* Lines */
+  --color-line: #dde3df;
+
+  /* Typography (wired to next/font variables in app/layout.tsx) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-label: var(--font-manrope), var(--font-inter), ui-sans-serif,
+    system-ui, sans-serif;
+}
+
+/* Base ------------------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* Visible focus states for keyboard users --------------------------------- */
+
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+/* Reusable layout utilities ------------------------------------------------ */
+
+@utility container-site {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 76rem;
+  padding-inline: 1.25rem;
+
+  @media (width >= 40rem) {
+    padding-inline: 2rem;
+  }
+
+  @media (width >= 64rem) {
+    padding-inline: 2.5rem;
+  }
+}
+
+@utility section-pad {
+  padding-block: 4.5rem;
+
+  @media (width >= 48rem) {
+    padding-block: 6.5rem;
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+@utility text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.15rem;
+  font-weight: 750;
+  color: var(--color-primary);
+}
+
+.hero-slide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 900ms ease;
+}
+
+.hero-slide[data-active="true"] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@utility prose-width {
+  max-width: 46rem;
+}
