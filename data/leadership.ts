@@ -6,30 +6,50 @@ import type { Leader, TimelineEntry } from "@/types/content";
  */
 export const leaders: Leader[] = [
   {
-    name: "Elias L. Malipesa",
-    role: "Executive Director & Co-Founder",
-    bio: "Elias Malipesa has worked in child and family welfare for many years, including as a child life facilitator with Streetwise Africa (SWA) and as programme coordinator at the Oratorio Canossa centre under the Canossian Fathers Congregation for eight years. His experience spans child and family counselling, child development, family relations, HIV and STD awareness, and disability awareness.",
-    image: {
-      src: "/images/placeholders/portrait.svg",
-      alt: "Portrait placeholder for Elias L. Malipesa",
-    },
-  },
-  {
-    name: "Hilarius M. Mnyavanu",
-    role: "Board Chairperson & Co-Founder",
+    name: "Hilarius Michael Mnyavanu",
+    role: "Board Chairperson and Co-Founder",
     bio: "Hilarius Mnyavanu co-founded UPSDE and chairs its board. He is recognized for his commitment to children and people living in poverty, and for personally supporting efforts to meet their unmet needs.",
     image: {
-      src: "/images/placeholders/portrait.svg",
-      alt: "Portrait placeholder for Hilarius M. Mnyavanu",
+      src: "/images/photos/hilarius-michael-mnyavanu.png",
+      alt: "Hilarius Michael Mnyavanu, UPSDE Board Chairperson",
+      objectPosition: "50% 38%",
     },
   },
   {
-    name: "Clement Mihayo",
-    role: "Treasurer & Board Member",
-    bio: "Clement Mihayo serves as Treasurer and a member of UPSDE, known for his commitment and efficiency.",
+    name: "Elias L. Malipesa",
+    role: "Executive Director and Co-Founder",
+    bio: "Elias Malipesa has worked in child and family welfare for many years, including as a child life facilitator with Streetwise Africa (SWA) and as programme coordinator at the Oratorio Canossa centre under the Canossian Fathers Congregation for eight years. His experience spans child and family counselling, child development, family relations, HIV and STD awareness, and disability awareness.",
     image: {
-      src: "/images/placeholders/portrait.svg",
-      alt: "Portrait placeholder for Clement Mihayo",
+      src: "/images/photos/elias-l-malipesa.png",
+      alt: "Elias L. Malipesa, UPSDE Executive Director",
+      objectPosition: "43% 50%",
+    },
+  },
+  {
+    name: "Angelina Benedictor",
+    role: "Board Secretary",
+    image: {
+      src: "/images/photos/angelina-benedictor.png",
+      alt: "Angelina Benedictor, UPSDE Board Secretary",
+      objectPosition: "50% 34%",
+    },
+  },
+  {
+    name: "Mathias Clement Mihayo",
+    role: "Board Treasurer",
+    image: {
+      src: "/images/photos/mathias-clement-mihayo.png",
+      alt: "Mathias Clement Mihayo, UPSDE Board Treasurer",
+      objectPosition: "50% 42%",
+    },
+  },
+  {
+    name: "Emilia Pastory Mtabi",
+    role: "Board Member",
+    image: {
+      src: "/images/photos/emilia-pastory-mtabi.png",
+      alt: "Emilia Pastory Mtabi, UPSDE Board Member",
+      objectPosition: "50% 38%",
     },
   },
 ];
@@ -41,12 +61,20 @@ export const governanceStructure = [
     description: "Provides governance oversight and strategic direction.",
   },
   {
-    role: "Secretary",
+    role: "Executive Director",
+    description: "Leads day-to-day operations and program delivery.",
+  },
+  {
+    role: "Board Secretary",
     description: "Supports governance processes and organizational records.",
   },
   {
-    role: "Executive Director",
-    description: "Leads day-to-day operations and program delivery.",
+    role: "Board Treasurer",
+    description: "Supports responsible financial oversight and accountability.",
+  },
+  {
+    role: "Board Member",
+    description: "Contributes to collective governance and strategic oversight.",
   },
 ];
 

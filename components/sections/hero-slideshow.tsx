@@ -62,7 +62,7 @@ export function HeroSlideshow() {
       {/* Text content — kept clear of the right image panel on desktop */}
       <div className="container-site relative z-10 flex flex-col justify-center pb-24 pt-16 md:pt-20 lg:min-h-[650px] lg:pb-0 lg:pt-0">
         <div className="lg:max-w-[56%] lg:pr-8">
-          <p className="eyebrow mb-5 text-gold">Tanzanian NGO · Mwanza</p>
+          <p className="eyebrow mb-5 text-gold">Tanzanian NGO</p>
           <h1 className="max-w-2xl text-5xl font-bold leading-[0.98] sm:text-6xl lg:text-7xl">
             Restoring dignity. Supporting vulnerable communities.
           </h1>

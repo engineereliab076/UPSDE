@@ -60,11 +60,11 @@ export const partners: Partner[] = [
   {
     name: "Tunaweza Disability Foundation",
     description:
-      "Collaborator on the Tulia Kumekucha mental-health baseline survey across 19 wards of Mbeya Region.",
+      "Implementer of the TULIA KUMEKUCHA mental-health project, in which UPSDE participated in the Midline Survey across 19 wards of Mbeya Region. UPSDE is also expected to participate in the Endline Survey.",
   },
   {
     name: "Grand Challenge Canada (GCC)",
     description:
-      "Funder of the Tulia Kumekucha project under which the Mbeya mental-health baseline survey was carried out.",
+      "Funder of the TULIA KUMEKUCHA project by TUNAWEZA Disability Foundation, under which UPSDE participated in the Mbeya mental-health Midline Survey and is expected to take part in the future Endline Survey.",
   },
 ];

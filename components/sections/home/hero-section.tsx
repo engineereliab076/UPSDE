@@ -10,7 +10,7 @@ export function HeroSection() {
         <Reveal>
           <div>
             <p className="mb-4 inline-flex items-center rounded-full border border-line bg-card px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
-              Tanzanian NGO · Mwanza
+              Tanzanian NGO
             </p>
             <h1 className="text-4xl font-bold leading-[1.1] text-ink md:text-5xl lg:text-6xl">
               Restoring Dignity.{" "}

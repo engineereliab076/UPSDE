@@ -32,6 +32,8 @@ export interface PlaceholderImage {
   aspect?: "landscape" | "portrait" | "square" | "wide";
   /** Low-resolution source photos are rendered smaller to avoid pixelation. */
   lowRes?: boolean;
+  /** Per-image crop focus used when a fixed card ratio crops the source. */
+  objectPosition?: string;
 }
 
 export interface ValueItem {
@@ -43,7 +45,8 @@ export interface ValueItem {
 export interface Leader {
   name: string;
   role: string;
-  bio: string;
+  /** Omitted when UPSDE has not supplied a verified biography. */
+  bio?: string;
   image: PlaceholderImage;
 }
 

@@ -44,7 +44,7 @@ export function Logo({ onDark = false, compact = false }: LogoProps) {
         {!compact && (
           <span
             className={cn(
-              "hidden max-w-48 text-[10px] font-medium leading-snug md:block",
+              "block max-w-[150px] text-[9px] font-medium leading-tight md:max-w-48 md:text-[10px] md:leading-snug",
               onDark ? "text-white/70" : "text-ink-muted",
             )}
           >
