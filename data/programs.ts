@@ -1,7 +1,7 @@
 import {
   Accessibility,
+  Baby,
   BookOpen,
-  FileCheck,
   HeartHandshake,
   HeartPulse,
   Home,
@@ -191,29 +191,29 @@ export const programs: Program[] = [
     },
   },
   {
-    slug: "birth-certificate-support",
-    title: "Birth Certificate Support",
-    icon: FileCheck,
+    slug: "children-vulnerable-families",
+    title: "Children Living in Vulnerable Families",
+    icon: Home,
     shortDescription:
-      "Helping vulnerable children and families access birth registration and protect their legal identity, in collaboration with relevant authorities.",
+      "Broader support for vulnerable children and families — including birth certificate support — to protect children's rights, legal identity, and access to essential services.",
     overview:
-      "A birth certificate is the foundation of legal identity — it opens the door to education, health services, and protection under the law. UPSDE supports vulnerable children and families in accessing birth registration services.",
+      "UPSDE supports children living in vulnerable family situations, helping households protect their children, secure their legal identity, and reach the services children depend on. Birth certificate support is one of the activities delivered under this work: a birth certificate establishes a child's legal identity and opens access to education, health services, and protection under the law.",
     activities: [
+      "Supporting vulnerable children and their families with essential needs",
+      "Birth Certificate Support — helping children and families access birth registration",
       "Raising awareness of the importance of birth registration",
-      "Supporting vulnerable families through the registration process",
-      "Helping children obtain birth certificates",
       "Protecting children's legal identity and rights",
       "Collaborating with relevant government authorities",
     ],
     beneficiaries: [
+      "Children living in vulnerable families",
       "Children without birth certificates",
-      "Vulnerable families",
-      "Youth needing proof of legal identity",
+      "Vulnerable families needing support",
     ],
     outcomes: [
       "More children with recognized legal identity",
       "Improved access to services that require registration",
-      "Stronger community awareness of birth registration",
+      "Stronger family-level support for vulnerable children",
     ],
     image: {
       src: "/images/photos/community-event-group.jpg",
@@ -221,6 +221,24 @@ export const programs: Program[] = [
       aspect: "square",
       lowRes: true,
     },
+  },
+  {
+    slug: "orphaned-child-care",
+    title: "Caring for an Orphaned Child",
+    icon: Baby,
+    shortDescription:
+      "Providing long-term care, protection, and support for an orphaned child in UPSDE's care since 2023.",
+    overview:
+      "UPSDE has been caring for one orphaned boy since 2023, immediately following the sudden death of his mother during childbirth. The organization has continued providing care, protection, and support from birth to the present.",
+    activities: [
+      "Providing continuous care for the child since 2023",
+      "Ensuring the child's protection and daily wellbeing",
+      "Meeting the child's basic needs from birth to the present",
+    ],
+    beneficiaries: ["An orphaned child in UPSDE's long-term care"],
+    outcomes: [
+      "Continuous care, protection, and support provided since 2023",
+    ],
   },
   {
     slug: "health-awareness",

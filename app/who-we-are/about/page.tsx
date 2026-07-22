@@ -40,6 +40,19 @@ export default function AboutPage() {
             <p className="mt-7 max-w-3xl text-lg leading-relaxed text-ink-secondary md:text-xl">UPSDE was formed to expand social development services and promote social welfare and justice, with attention to people and families at greater risk of being left behind.</p>
             <p className="mt-5 max-w-3xl text-lg leading-relaxed text-ink-secondary md:text-xl">Its areas of work include birth certificate support, child protection, education, psychological counselling, disability inclusion, women and family welfare, youth development, health awareness, and environmental and agricultural initiatives.</p>
             <p className="mt-7 max-w-3xl border-l-4 border-gold pl-6 font-heading text-xl leading-relaxed text-ink md:text-2xl">&ldquo;{siteConfig.motto}&rdquo;</p>
+
+            <div className="mt-12 border-t border-ink/20 pt-8">
+              <h3 className="eyebrow text-primary">Objectives</h3>
+              <ul className="mt-5 max-w-3xl space-y-4">
+                <li className="border-l-2 border-gold pl-5 text-lg leading-relaxed text-ink-secondary">Supporting poor children in particular.</li>
+                <li className="border-l-2 border-gold pl-5 text-lg leading-relaxed text-ink-secondary">Capacity building for youth, people with disabilities, and vulnerable families in order to improve livelihoods, education, and positive social attitudes.</li>
+              </ul>
+            </div>
+
+            <div className="mt-10">
+              <h3 className="eyebrow text-primary">Our Policy</h3>
+              <p className="mt-4 max-w-3xl border-l-4 border-primary pl-6 text-lg leading-relaxed text-ink md:text-xl">Promoting humanity as a central value and concern.</p>
+            </div>
           </div>
         </div>
       </section>

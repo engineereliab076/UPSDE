@@ -16,7 +16,7 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const groupedPrograms = [
-  { pillar: workPillars[0], slugs: ["child-support-protection", "education-support", "birth-certificate-support"] },
+  { pillar: workPillars[0], slugs: ["child-support-protection", "education-support", "children-vulnerable-families", "orphaned-child-care"] },
   { pillar: workPillars[1], slugs: ["psychological-counselling", "women-family-support"] },
   { pillar: workPillars[2], slugs: ["disability-inclusion", "health-awareness"] },
   { pillar: workPillars[3], slugs: ["youth-empowerment", "environment-agriculture"] },
@@ -24,6 +24,16 @@ const groupedPrograms = [
   ...group,
   programs: group.slugs.map((slug) => programs.find((program) => program.slug === slug)).filter(Boolean),
 }));
+
+const otherAreasOfWork = [
+  "Support for deprived women and children",
+  "Referrals to justice and legal support systems",
+  "Connecting beneficiaries to required support services",
+  "Community sensitization and awareness campaigns",
+  "Health and disease awareness education",
+  "Environmental awareness activities",
+  "Baseline surveys and related community training activities",
+];
 
 export default function OurWorkPage() {
   return (
@@ -86,6 +96,24 @@ export default function OurWorkPage() {
           </div>
         </section>
       ))}
+
+      <section className="section-pad bg-surface" aria-labelledby="other-areas-heading">
+        <div className="container-site grid gap-10 lg:grid-cols-[.65fr_1.35fr]">
+          <div>
+            <p className="eyebrow text-terracotta">Beyond the core pillars</p>
+            <h2 id="other-areas-heading" className="mt-4 text-5xl font-bold leading-none text-ink md:text-6xl">Other Areas of Work</h2>
+            <p className="mt-5 leading-relaxed text-ink-secondary">Additional activities UPSDE carries out alongside its core programs, in response to community needs.</p>
+          </div>
+          <ul className="border-t border-ink/20">
+            {otherAreasOfWork.map((area, index) => (
+              <li key={area} className="grid grid-cols-[3rem_1fr] gap-3 border-b border-ink/20 py-5">
+                <span className="eyebrow text-terracotta">0{index + 1}</span>
+                <span className="text-lg font-semibold leading-relaxed text-ink">{area}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <section className="section-pad bg-paper">
         <div className="container-site grid gap-7 md:grid-cols-[1fr_auto] md:items-end">
