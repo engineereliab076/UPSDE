@@ -90,17 +90,29 @@ export default function ContactPage() {
               </dd>
             </div>
 
-            {contact.email && (
+            {(contact.email || contact.emails.length > 0) && (
               <div className="rounded-lg border border-line bg-card p-6">
                 <Mail className="h-6 w-6 text-primary" aria-hidden="true" />
                 <dt className="eyebrow mt-4 text-primary">Email</dt>
-                <dd className="mt-2 leading-relaxed">
-                  <a
-                    href={`mailto:${contact.email}`}
-                    className="text-ink-secondary underline-offset-4 hover:text-primary hover:underline"
-                  >
-                    {contact.email}
-                  </a>
+                <dd className="mt-2 flex flex-col gap-1">
+                  {contact.email && (
+                    <a
+                      href={`mailto:${contact.email}`}
+                      className="leading-relaxed text-ink-secondary underline-offset-4 hover:text-primary hover:underline"
+                    >
+                      {contact.email}
+                    </a>
+                  )}
+                  {contact.emails.map((entry) => (
+                    <a
+                      key={entry.address}
+                      href={`mailto:${entry.address}`}
+                      className="leading-relaxed text-ink-secondary underline-offset-4 hover:text-primary hover:underline"
+                    >
+                      {entry.address}
+                      <span className="ml-2 text-xs text-ink-muted">({entry.label})</span>
+                    </a>
+                  ))}
                 </dd>
               </div>
             )}

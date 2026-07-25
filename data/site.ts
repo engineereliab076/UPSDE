@@ -31,6 +31,11 @@ export const siteConfig = {
       { number: "+255 758 016 666", label: "Directors" },
       { number: "+255 753 366 758", label: "Board Chairperson" },
     ] as { number: string; label: string }[],
+    /** Leadership email contacts, with the role each belongs to. */
+    emails: [
+      { address: "hmnyavanu@gmail.com", label: "Board Chairperson" },
+      { address: "elymalipesa2@gmail.com", label: "Executive Director" },
+    ] as { address: string; label: string }[],
     /** Digits only, used to build the wa.me link. */
     whatsappNumber: "255694251313" as string | null,
     whatsappMessage: "Hello UPSDE, I would like to learn more about your work.",

@@ -198,7 +198,11 @@ export const workPillars: WorkPillar[] = [
       "Birth certificate support",
       "Support for girls and children with disabilities",
     ],
-    photo: highResPhotos.awarenessEvent,
+    photo: {
+      ...highResPhotos.communitySession,
+      caption: "Children and families at a UPSDE session",
+      objectPosition: "40% 45%",
+    },
   },
   {
     id: "family-welfare",
@@ -213,14 +217,9 @@ export const workPillars: WorkPillar[] = [
       "Emotional and social support",
     ],
     photo: {
-      src: "/images/photos/family-welfare-gathering.png",
-      alt: "Women, children and elders gathered together outdoors at a UPSDE family welfare event",
-      width: 338,
-      height: 306,
+      ...highResPhotos.communityGatheringHall,
       caption: "Family welfare gathering",
-      objectPosition: "50% 42%",
-      orientation: "landscape",
-      lowRes: true,
+      objectPosition: "48% 42%",
     },
   },
   {
@@ -236,14 +235,10 @@ export const workPillars: WorkPillar[] = [
       "Community health education",
     ],
     photo: {
-      src: "/images/photos/rights-inclusion-child.png",
-      alt: "A young child seated with a bowl of food during a UPSDE community support visit",
-      width: 332,
-      height: 456,
-      caption: "Community support visit",
-      objectPosition: "48% 30%",
-      orientation: "portrait",
-      lowRes: true,
+      ...highResPhotos.awarenessEvent,
+      alt: "Children with albinism and other community members taking part in a UPSDE inclusion and rights event",
+      caption: "Disability inclusion and rights event",
+      objectPosition: "30% 42%",
     },
   },
   {

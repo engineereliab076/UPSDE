@@ -30,14 +30,25 @@ export default function LeadershipPage() {
             <p className="mt-5 leading-relaxed text-ink-secondary">Meet the board and executive leaders responsible for UPSDE&apos;s governance, direction and day-to-day leadership.</p>
           </div>
           <ul className="mt-12 grid items-start gap-6 md:grid-cols-2 lg:grid-cols-6">
-            {leaders.map((leader, index) => (
-              <li
-                key={leader.name}
-                className={`lg:col-span-2 ${index === 3 ? "lg:col-start-2" : ""}`}
-              >
-                <TeamCard leader={leader} />
-              </li>
-            ))}
+            {leaders.map((leader, index) => {
+              // Cards span 2 of 6 columns, i.e. 3 per row on large screens.
+              // Center any leftover cards that land in an incomplete final row.
+              const remainder = leaders.length % 3;
+              const firstInLastRow = leaders.length - remainder;
+              let lastRowStart = "";
+              if (index === firstInLastRow) {
+                if (remainder === 1) lastRowStart = "lg:col-start-3";
+                else if (remainder === 2) lastRowStart = "lg:col-start-2";
+              }
+              return (
+                <li
+                  key={leader.name}
+                  className={`lg:col-span-2 ${lastRowStart}`}
+                >
+                  <TeamCard leader={leader} />
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>

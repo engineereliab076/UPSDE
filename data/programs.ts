@@ -1,11 +1,12 @@
 import {
   Accessibility,
-  Baby,
   BookOpen,
+  FileText,
   HeartHandshake,
   HeartPulse,
   Home,
   Leaf,
+  Scissors,
   Shield,
   TrendingUp,
 } from "lucide-react";
@@ -191,54 +192,35 @@ export const programs: Program[] = [
     },
   },
   {
-    slug: "children-vulnerable-families",
-    title: "Children Living in Vulnerable Families",
-    icon: Home,
+    slug: "birth-certificate-support",
+    title: "Birth Certificate Support",
+    icon: FileText,
     shortDescription:
-      "Broader support for vulnerable children and families — including birth certificate support — to protect children's rights, legal identity, and access to essential services.",
+      "Helping children in vulnerable families obtain birth registration — the legal identity that unlocks education, health care and protection under the law.",
     overview:
-      "UPSDE supports children living in vulnerable family situations, helping households protect their children, secure their legal identity, and reach the services children depend on. Birth certificate support is one of the activities delivered under this work: a birth certificate establishes a child's legal identity and opens access to education, health services, and protection under the law.",
+      "A birth certificate gives a child a recognized legal identity and opens the door to education, health services and protection under the law. UPSDE helps children in vulnerable families secure birth registration and raises community awareness of why it matters — working alongside the relevant government authorities to reach children who would otherwise be left without documentation.",
     activities: [
-      "Supporting vulnerable children and their families with essential needs",
-      "Birth Certificate Support — helping children and families access birth registration",
-      "Raising awareness of the importance of birth registration",
+      "Helping children and families access birth registration",
+      "Raising community awareness of the importance of birth registration",
       "Protecting children's legal identity and rights",
-      "Collaborating with relevant government authorities",
+      "Collaborating with relevant government authorities (RITA)",
     ],
     beneficiaries: [
-      "Children living in vulnerable families",
       "Children without birth certificates",
-      "Vulnerable families needing support",
+      "Children living in vulnerable families",
+      "Families needing help to register their children",
     ],
     outcomes: [
       "More children with recognized legal identity",
       "Improved access to services that require registration",
-      "Stronger family-level support for vulnerable children",
+      "Greater community awareness of birth registration",
     ],
     image: {
-      src: "/images/photos/community-event-group.jpg",
-      alt: "Families and children gathered outdoors after a birth certificate distribution event",
-      aspect: "square",
-      lowRes: true,
+      src: "/images/photos/birth-certificate-ceremony.jpg",
+      alt: "A child receiving a birth certificate at a UPSDE handover, supported by community members and officials",
+      aspect: "portrait",
+      objectPosition: "50% 32%",
     },
-  },
-  {
-    slug: "orphaned-child-care",
-    title: "Caring for an Orphaned Child",
-    icon: Baby,
-    shortDescription:
-      "Providing long-term care, protection, and support for an orphaned child in UPSDE's care since 2023.",
-    overview:
-      "UPSDE has been caring for one orphaned boy since 2023, immediately following the sudden death of his mother during childbirth. The organization has continued providing care, protection, and support from birth to the present.",
-    activities: [
-      "Providing continuous care for the child since 2023",
-      "Ensuring the child's protection and daily wellbeing",
-      "Meeting the child's basic needs from birth to the present",
-    ],
-    beneficiaries: ["An orphaned child in UPSDE's long-term care"],
-    outcomes: [
-      "Continuous care, protection, and support provided since 2023",
-    ],
   },
   {
     slug: "health-awareness",
@@ -291,6 +273,37 @@ export const programs: Program[] = [
       "Improved agricultural practices and productivity",
       "New income opportunities linked to agriculture",
     ],
+  },
+  {
+    slug: "apprentice-young-women",
+    title: "Apprentice Programme for Young Women",
+    icon: Scissors,
+    shortDescription:
+      "A vocational apprenticeship helping out-of-school young women build livelihoods through tailoring skills, mentorship and economic empowerment.",
+    overview:
+      "This apprenticeship supports out-of-school young women to become skilled, self-reliant tailors. Through hands-on training, mentorship and small-business guidance, young women gain a marketable trade and a genuine path to economic independence.",
+    activities: [
+      "Hands-on tailoring and garment-making training",
+      "Mentorship and life-skills support for young women",
+      "Guidance on running a small tailoring enterprise",
+      "Pathways to employment and self-employment",
+    ],
+    beneficiaries: [
+      "Out-of-school young women",
+      "Young women seeking a vocational trade",
+      "Young women pursuing economic independence",
+    ],
+    outcomes: [
+      "Young women equipped with a marketable skill",
+      "Greater economic independence for young women",
+      "New income and enterprise opportunities",
+    ],
+    image: {
+      src: "/images/photos/apprentice-young-women.png",
+      alt: "A young woman sewing at a machine surrounded by fabrics during a UPSDE tailoring apprenticeship",
+      aspect: "portrait",
+      objectPosition: "50% 45%",
+    },
   },
 ];
 

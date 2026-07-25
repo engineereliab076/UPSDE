@@ -52,6 +52,24 @@ export const leaders: Leader[] = [
       objectPosition: "50% 38%",
     },
   },
+  {
+    name: "Rehema John Mahundi",
+    role: "Board Member",
+    image: {
+      src: "/images/photos/rehema-john-mahundi.png",
+      alt: "Rehema John Mahundi, UPSDE Board Member",
+      objectPosition: "50% 30%",
+    },
+  },
+  {
+    name: "Joyce Mgeta",
+    role: "Board Member",
+    image: {
+      src: "/images/photos/joyce-mgeta.png",
+      alt: "Joyce Mgeta, UPSDE Board Member",
+      objectPosition: "50% 35%",
+    },
+  },
 ];
 
 /** Top management structure, rendered as a simple governance diagram. */
