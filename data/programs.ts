@@ -25,11 +25,13 @@ export const programs: Program[] = [
     shortDescription:
       "Supporting vulnerable and street-connected children with basic needs, protection, counselling, and reintegration into safe family environments.",
     overview:
-      "UPSDE works with vulnerable children — including street-connected children and those with unmet basic needs — to protect their rights, restore their dignity, and reconnect them with safe, supportive environments.",
+      "UPSDE works with vulnerable children — including street-connected children and those with unmet basic needs — to protect their rights and restore their dignity. This includes supporting children living on the streets with guidance and psychosocial care and, when a child chooses to leave street life, tracing family or suitable caregivers so they can be safely reunited and reintegrated into family, community, education and protection systems.",
     activities: [
       "Identifying and supporting vulnerable and street-connected children",
+      "Providing support, guidance and psychosocial assistance to children living on the streets while encouraging positive life changes",
+      "Tracing parents, relatives or other suitable caregivers to reunite children who choose to leave street life, whenever it is safe and in the child's best interests",
+      "Supporting children's reintegration into safe family or community environments and reconnecting them with education, protection services and other essential support systems",
       "Providing school materials and support for unmet basic needs",
-      "Facilitating family reintegration for street-connected children",
       "Promoting awareness of child rights within communities",
       "Offering counselling and psychosocial support to children",
     ],
