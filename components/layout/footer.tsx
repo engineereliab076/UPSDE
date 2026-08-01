@@ -10,7 +10,7 @@ export function Footer() {
 
   return (
     <footer className="bg-primary-dark text-white/80">
-      <div className="container-site grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.35fr_1.5fr_0.9fr] lg:gap-16">
+      <div className="container-site grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.2fr_2fr_1fr] lg:gap-16">
         {/* Organization */}
         <div>
           <Logo onDark compact />
@@ -28,7 +28,7 @@ export function Footer() {
         </div>
 
         {/* Grouped navigation */}
-        <nav aria-label="Footer navigation" className="grid gap-8 sm:grid-cols-3">
+        <nav aria-label="Footer navigation" className="grid grid-cols-2 gap-8 lg:grid-cols-4">
           {footerNav.map((group) => (
             <div key={group.heading}>
               <h2 className="text-sm font-semibold uppercase tracking-wider text-white">

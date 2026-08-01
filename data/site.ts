@@ -1,3 +1,5 @@
+import { publicEnv } from "@/lib/env";
+
 /**
  * Central, client-editable site configuration.
  *
@@ -16,8 +18,8 @@ export const siteConfig = {
   description:
     "UPSDE is a Tanzanian non-governmental organization supporting vulnerable children, youth, women, families, and people with disabilities through counselling, education, advocacy, empowerment, and community development.",
 
-  /** PLACEHOLDER — replace with the final production domain before launch. */
-  url: "https://www.upsde.example",
+  /** Validated deployment origin supplied through NEXT_PUBLIC_SITE_URL. */
+  url: publicEnv.siteUrl,
 
   foundingYear: "2024",
 
@@ -27,8 +29,8 @@ export const siteConfig = {
     phone: "+255 694 251 313" as string | null,
     /** All verified official lines, with the role each belongs to. */
     phones: [
-      { number: "+255 694 251 313", label: "Directors" },
-      { number: "+255 758 016 666", label: "Directors" },
+      { number: "+255 694 251 313", label: "Executive Director" },
+      { number: "+255 758 016 666", label: "Executive Director" },
       { number: "+255 753 366 758", label: "Board Chairperson" },
     ] as { number: string; label: string }[],
     /** Leadership email contacts, with the role each belongs to. */

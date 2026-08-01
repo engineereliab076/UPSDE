@@ -274,10 +274,3 @@ export const impactAreas = [
   "Youth capacity building",
   "Disability inclusion",
 ];
-
-export const reportPlaceholders = [
-  "Annual activity reports",
-  "Program documentation",
-  "Financial and governance reports",
-  "UPSDE organization profile",
-];

@@ -8,9 +8,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/who-we-are/history",
     "/who-we-are/leadership",
     "/what-we-do/our-work",
+    "/what-we-do/our-work/practical-scale-technician-training",
     "/what-we-do/our-impact",
     "/get-involved",
     "/contact",
+    "/legal/privacy-policy",
+    "/legal/terms-of-use",
+    "/legal/safeguarding-policy",
   ];
 
   return routes.map((route) => ({

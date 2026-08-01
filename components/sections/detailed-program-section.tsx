@@ -111,7 +111,7 @@ export function DetailedProgramSection({
               <div className="rounded-lg border border-line bg-card p-5">
                 <h3 className="flex items-center gap-2 text-sm font-semibold text-ink">
                   <Target className="h-4.5 w-4.5 text-terracotta" aria-hidden="true" />
-                  What we work toward
+                  Expected Outcomes
                 </h3>
                 <ul className="mt-3 space-y-1.5">
                   {program.outcomes.map((item) => (

@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navigation/navbar";
 import { Footer } from "@/components/layout/footer";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { BackToTopButton } from "@/components/ui/back-to-top-button";
+import { Analytics } from "@/components/analytics";
 import "./globals.css";
 
 const inter = Inter({
@@ -110,6 +111,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <BackToTopButton />
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

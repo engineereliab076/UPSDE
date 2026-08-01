@@ -62,9 +62,6 @@ export default function ContactPage() {
               <MapPin className="h-6 w-6 text-primary" aria-hidden="true" />
               <dt className="eyebrow mt-4 text-primary">Location</dt>
               <dd className="mt-2 leading-relaxed text-ink-secondary">{contact.location}</dd>
-              <dd className="mt-1 text-sm text-ink-muted">
-                Map to be added once the exact office location is confirmed.
-              </dd>
             </div>
 
             <div className="rounded-lg border border-line bg-card p-6">

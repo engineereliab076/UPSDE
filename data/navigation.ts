@@ -53,4 +53,12 @@ export const footerNav: FooterNavGroup[] = [
       { label: "Contact", href: "/contact" },
     ],
   },
+  {
+    heading: "Legal",
+    links: [
+      { label: "Privacy Policy", href: "/legal/privacy-policy" },
+      { label: "Terms of Use", href: "/legal/terms-of-use" },
+      { label: "Safeguarding Policy", href: "/legal/safeguarding-policy" },
+    ],
+  },
 ];
